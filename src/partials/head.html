@@ -1,0 +1,57 @@
+
+<meta charset="UTF-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="stylesheet" href="./css/base.css">
+<link id = "media" rel="stylesheet" href="#">
+<meta name="description" content="ROSSO - House furniture shop">
+
+<script>
+		const link = document.getElementById("media") 
+
+		function checkWidth(){
+				const innerWidth = window.innerWidth;
+				let href;
+				
+				if(window.matchMedia("screen and (max-width: 525px)").matches){
+						href = "css/mobile.css";
+						checkCurrentHref(href)
+				} else if(window.matchMedia("screen and (min-width: 525px) and (max-width: 1124px)").matches){
+						href = "css/tablet.css";
+						checkCurrentHref(href)
+				} else if(window.matchMedia("screen and (min-width: 1124px) and (max-width: 1366px)").matches){
+						href = "css/laptop.css";
+						checkCurrentHref(href)
+				} else if(window.matchMedia("screen and (min-width: 1366px)").matches){
+						href = "css/desktop.css";
+						checkCurrentHref(href)
+				}
+		}
+
+		function checkCurrentHref(href){
+				const currentHref = link.getAttribute("href")
+
+				if (!(href === currentHref)) {
+						setHref(href)
+				}
+		}
+
+		function setHref(href){
+				link.setAttribute("href", href) 
+		}
+
+		checkWidth()
+
+		window.requestAnimationFrame(()=>{
+				window.addEventListener('resize', function(event) {
+						checkWidth()
+				}, true);
+		})
+</script>
+	
+<noscript>
+	<link href="css/bundle.css" rel="stylesheet">
+</noscript>
+
+
+<title>@@title</title>

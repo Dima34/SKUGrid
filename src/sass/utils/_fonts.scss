@@ -1,0 +1,49 @@
+/* montserrat-regular - latin_cyrillic */
+@font-face {
+font-family: 'Montserrat';
+font-style: normal;
+font-weight: 400;
+src: url('../fonts/montserrat-v18-latin_cyrillic-regular.eot'); /* IE9 Compat Modes */
+src: local(''),
+    url('../fonts/montserrat-v18-latin_cyrillic-regular.woff2') format('woff2'), /* Super Modern Browsers */
+}
+
+/* montserrat-500 - latin_cyrillic */
+@font-face {
+font-family: 'Montserrat';
+font-style: normal;
+font-weight: 500;
+src: local(''),
+    url('../fonts/montserrat-v23-latin_cyrillic-500.woff2') format('woff2'), /* Super Modern Browsers */
+}
+
+/* montserrat-600 - latin_cyrillic */
+@font-face {
+font-family: 'Montserrat';
+font-style: normal;
+font-weight: 600;
+src: url('../fonts/montserrat-v18-latin_cyrillic-600.eot'); /* IE9 Compat Modes */
+src: local(''),
+    url('../fonts/montserrat-v18-latin_cyrillic-600.woff2') format('woff2'), /* Super Modern Browsers */
+}
+
+/* rf dewi */
+@font-face {
+font-family: 'RF Dewi';
+font-style: normal;
+font-weight: 600;
+src: local('RF Dewi Semibold'), local('RF-Dewi-Semibold'),
+    url('../fonts/RFDewiExpanded-Semibold.woff2') format('woff2'),
+
+}
+
+@font-face {
+    font-family: 'password';
+    src: url('../fonts/fontello.eot?12016094');
+    src: url('../fonts/fontello.eot?12016094#iefix') format('embedded-opentype'),
+        url('../fonts/fontello.woff?12016094') format('woff'),
+        url('../fonts/fontello.ttf?12016094') format('truetype'),
+        url('../fonts/fontello.svg?12016094#fontello') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}

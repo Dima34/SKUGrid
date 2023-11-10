@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en" class="primary-white-background">
+
+<head>
+	
+<meta charset="UTF-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="stylesheet" href="./css/base.css">
+<link id = "media" rel="stylesheet" href="#">
+<meta name="description" content="ROSSO - House furniture shop">
+
+<script>
+		const link = document.getElementById("media") 
+
+		function checkWidth(){
+				const innerWidth = window.innerWidth;
+				let href;
+				
+				if(window.matchMedia("screen and (max-width: 525px)").matches){
+						href = "css/mobile.css";
+						checkCurrentHref(href)
+				} else if(window.matchMedia("screen and (min-width: 525px) and (max-width: 1124px)").matches){
+						href = "css/tablet.css";
+						checkCurrentHref(href)
+				} else if(window.matchMedia("screen and (min-width: 1124px) and (max-width: 1366px)").matches){
+						href = "css/laptop.css";
+						checkCurrentHref(href)
+				} else if(window.matchMedia("screen and (min-width: 1366px)").matches){
+						href = "css/desktop.css";
+						checkCurrentHref(href)
+				}
+		}
+
+		function checkCurrentHref(href){
+				const currentHref = link.getAttribute("href")
+
+				if (!(href === currentHref)) {
+						setHref(href)
+				}
+		}
+
+		function setHref(href){
+				link.setAttribute("href", href) 
+		}
+
+		checkWidth()
+
+		window.requestAnimationFrame(()=>{
+				window.addEventListener('resize', function(event) {
+						checkWidth()
+				}, true);
+		})
+</script>
+	
+<noscript>
+	<link href="css/bundle.css" rel="stylesheet">
+</noscript>
+
+
+<title>Title</title>
+
+</head>
+
+
+<body>
+	<header>
+  <div class="wrapper">
+    <button id="burger-open" class="black" data-popupTrigger="#burger">
+      <svg width="24" height="24"><use xlink:href="#burger-svg"></use></svg>
+
+      <svg width="24" height="24">
+        <use xlink:href="#burger-close-svg"></use>
+      </svg>                
+    </button>
+  </div>
+</header>
+
+	<main>
+	</main>
+
+	<footer class="black-bg white">
+  <div class="wrapper">
+  </div>
+</footer>
+	<div id="blur"></div>
+
+
+<nav id="burger" data-popup>
+  <button class="catalogue-open body-4 gray" data-popupTrigger="#catalogue" data-customOpenFunction = "createCatalogueClosebtn">
+  Catalogue
+  </button>
+  <div class="burger-content">
+  <ul>
+    <li><a href="./catalogue-new.html" class="body-4 gray">New items</a></li>
+    <li><a href="./catalogue-sales.html" class="body-4 gray">Sale</a></li>
+  </ul>
+  <ul>
+    <li><a href="./about-us.html" class="body-4 gray">About us</a></li>
+    <li><a href="./brands.html" class="body-4 gray">Brand list</a></li>
+    <li><a href="./delivery.html" class="body-4 gray">Delivery&Payment</a></li>
+    <li><a href="./guarantees.html" class="body-4 gray">Guarentees</a></li>
+    <li><a href="./exchange.html" class="body-4 gray">Exchange / return</a></li>
+    <li><a href="./news.html" class="body-4 gray">News</a></li>
+    <li><a href="./articles.html" class="body-4 gray">Articles</a></li>
+    <li><a href="./contact-us.html" class="body-4 gray">Contacts</a></li>
+  </ul>
+  <ul>
+    <li><button class="body-4 gray" data-popupTrigger="#favorites">Favorites</button></li>
+    <li><button class="body-4 gray" data-popupTrigger="#authorization">Supplier access</button></li>
+  </ul>
+  </div>
+</nav>
+	<svg style="display: none;" xmlns="http://www.w3.org/2000/svg">
+	<symbol id="burger-svg" viewBox="0 0 24 24">
+		<path
+			d="M4.20857 13L19.7914 13C20.4589 13 21 12.5791 21 12.06L21 11.94C21 11.4209 20.4589 11 19.7914 11L4.20857 11C3.5411 11 3 11.4209 3 11.94L3 12.06C3 12.5791 3.5411 13 4.20857 13Z" />
+		<path
+			d="M3.94 8L20.06 8C20.5791 8 21 7.57915 21 7.06L21 6.94C21 6.42085 20.5791 6 20.06 6L3.94 6C3.42085 6 3 6.42085 3 6.94L3 7.06C3 7.57915 3.42085 8 3.94 8Z" />
+		<path
+			d="M3.94 18L20.06 18C20.5791 18 21 17.5791 21 17.06L21 16.94C21 16.4209 20.5791 16 20.06 16L3.94 16C3.42085 16 3 16.4209 3 16.94L3 17.06C3 17.5791 3.42085 18 3.94 18Z" />
+	</symbol>
+	<symbol id="burger-close-svg" viewBox="0 0 24 24">
+		<path
+			d="M18.407 16.9922L7.00843 5.59364C6.64134 5.22654 6.04616 5.22654 5.67907 5.59364L5.59422 5.67849C5.22712 6.04558 5.22712 6.64076 5.59422 7.00785L16.9928 18.4064C17.3599 18.7735 17.955 18.7735 18.3221 18.4064L18.407 18.3216C18.7741 17.9545 18.7741 17.3593 18.407 16.9922Z" />
+		<path
+			d="M16.992 5.5935L5.59339 16.9921C5.2263 17.3592 5.2263 17.9543 5.59339 18.3214L5.67824 18.4063C6.04534 18.7734 6.64051 18.7734 7.0076 18.4063L18.4062 7.00771C18.7733 6.64062 18.7733 6.04544 18.4062 5.67835L18.3213 5.5935C17.9542 5.2264 17.359 5.2264 16.992 5.5935Z" />
+	</symbol>
+</svg>
+
+	<script src="./js/popups.js"></script>
+	<script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+</body>
+</html>

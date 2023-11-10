@@ -1,0 +1,173 @@
+@import "_media-variables.scss";
+
+html {
+  /*---Colors---*/
+  --black: #444444;
+  --white: #FFFFFF;
+  --gray: #7A7A7A;
+  --light-gray: #C1C1C1;
+
+  /*---Fonts---*/
+  --h1: 600 48px / 110% 'RF Dewi';
+  --h2: 600 32px / 110% 'RF Dewi';
+  --h3: 600 24px / 120% 'RF Dewi';
+  --h4: 600 20px / 120% 'RF Dewi';
+  --h5: 600 18px / 120% 'RF Dewi';
+  --h6: 600 16px / 120% 'RF Dewi';
+  --sub-title-1: 600 18px / 140% 'Montserrat';
+  --sub-title-2: 600 14px / 140% 'Montserrat';
+  --body-1: 400 18px / 150% 'Montserrat';
+  --body-2: 400 16px / 150% 'Montserrat';
+  --body-3: 400 14px / 150% 'Montserrat';
+  --body-4: 400 12px / 150% 'Montserrat';
+}
+
+/*---Colors---*/
+
+h1,h2,h3,p,a,span{
+	color: var(--black);
+}
+
+.black-bg {
+  background-color: var(--black);
+}
+.black {
+  color: var(--black);
+}
+
+.white-bg {
+  background-color: var(--white);
+}
+.white {
+  color: var(--white);
+}
+
+.gray-bg {
+  background-color: var(--gray);
+}
+.gray {
+  color: var(--gray);
+}
+
+.light-gray-bg {
+  background-color: var(--light-gray);
+}
+.light-gray {
+  color: var(--light-gray);
+}
+
+/*---Fonts---*/
+.h1 {
+  font: var(--h1);
+}
+.h2 {
+  font: var(--h2);
+}
+.h3 {
+  font: var(--h3);
+}
+.h4 {
+  font: var(--h4);
+}
+.h5 {
+  font: var(--h5);
+}
+.h6 {
+  font: var(--h6);
+}
+
+.sub-title-1 {
+  font: var(--sub-title-1);
+}
+.sub-title-2 {
+  font: var(--sub-title-2);
+}
+
+.body-1 {
+  font: var(--body-1);
+}
+.body-2 {
+  font: var(--body-2);
+}
+.body-3 {
+  font: var(--body-3);
+}
+.body-4 {
+  font: var(--body-4);
+}
+
+p {
+  font: var(--body-1);
+}
+
+@media screen and(min-width: $tablet) and(max-width: $laptop) {
+  html {
+    /*---Colors---*/
+    --black: #444444;
+    --white: #FFFFFF;
+    --gray: #7A7A7A;
+    --light-gray: #C1C1C1;
+
+    /*---Fonts---*/
+    --h1: 600 32px / 110% 'RF Dewi';
+    --h2: 600 32px / 110% 'RF Dewi';
+    --h3: 600 18px / 120% 'RF Dewi';
+    --h4: 600 16px / 120% 'RF Dewi';
+    --h5: 600 18px / 120% 'RF Dewi';
+    --h6: 600 16px / 120% 'RF Dewi';
+    --sub-title-1: 600 14px / 140% 'Montserrat';
+    --sub-title-2: 600 14px / 140% 'Montserrat';
+    --body-1: 400 14px / 150% 'Montserrat';
+    --body-2: 400 14px / 150% 'Montserrat';
+    --body-3: 400 14px / 150% 'Montserrat';
+    --body-4: 400 12px / 150% 'Montserrat';
+  }
+}
+
+@media screen and (min-width: $mobile) and (max-width: $tablet) {
+  html {
+    /*---Colors---*/
+    --black: #444444;
+    --white: #FFFFFF;
+    --gray: #7A7A7A;
+    --light-gray: #C1C1C1;
+
+    /*---Fonts---*/
+    --h1: 600 24px / 110% 'RF Dewi';
+    --h2: 600 16px / 110% 'RF Dewi';
+    --h3: 600 18px / 120% 'RF Dewi';
+    --h4: 600 18px / 120% 'RF Dewi';
+    --h5: 600 18px / 120% 'RF Dewi';
+    --h6: 600 16px / 120% 'RF Dewi';
+    --sub-title-1: 600 14px / 140% 'Montserrat';
+    --sub-title-2: 600 14px / 140% 'Montserrat';
+    --body-1: 400 12px / 150% 'Montserrat';
+    --body-2: 400 12px / 150% 'Montserrat';
+    --body-3: 400 12px / 150% 'Montserrat';
+    --body-4: 400 12px / 150% 'Montserrat';
+  }
+}
+
+@media screen and (max-width: $mobile) {
+  html {
+    /*---Colors---*/
+    --black: #444444;
+    --white: #FFFFFF;
+    --gray: #7A7A7A;
+    --light-gray: #C1C1C1;
+
+    /*---Fonts---*/
+    --h1: 600 18px / 110% 'RF Dewi';
+    --h2: 600 14px / 110% 'RF Dewi';
+    --h3: 600 14px / 120% 'RF Dewi';
+    --h4: 600 14px / 120% 'RF Dewi';
+    --h5: 600 18px / 120% 'RF Dewi';
+    --h6: 600 14px / 120% 'RF Dewi';
+    --sub-title-1: 600 14px / 140% 'Montserrat';
+    --sub-title-2: 600 14px / 140% 'Montserrat';
+    --body-1: 400 12px / 150% 'Montserrat';
+    --body-2: 400 12px / 150% 'Montserrat';
+    --body-3: 400 12px / 150% 'Montserrat';
+    --body-4: 400 12px / 150% 'Montserrat';
+  }
+}
